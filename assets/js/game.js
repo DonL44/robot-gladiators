@@ -16,10 +16,10 @@ for (var i = 0; i < enemyName.length; i++) {
 var enemyHealth = 50;
 var enemyAttack = 12;
 
-for (var i = 0; i < enemyNames.length; i++) {
-  debugger;
-  // call fight function with enemy-robot
-  fight(enemyNames[i]);
+for (var i = 0; i < enemyName.length; i++) {
+  var pickedEnemyName = enemyName[i];
+  enemyHealth = 50;
+  fight(pickedEnemyName);
 }
 
 var fight = function (enemyName) {
